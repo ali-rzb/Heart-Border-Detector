@@ -8,13 +8,16 @@ This project addresses the critical challenge of tracking cardiac motion in medi
 
 ## Data
 
-The project uses a dataset consisting of four short films, each capturing different individuals undergoing cardiac interventions. Each film contains 23 to 28 frames, with a resolution of 512x512 pixels. These films serve as both the training and testing data. The dataset offers a comprehensive evaluation of the proposed algorithm's generalizability and robustness.
+The project uses a dataset consisting of four short films, each capturing different individuals undergoing cardiac interventions. Each film contains 23 to 28 frames, with a resolution of 512x512 pixels. These films serve as both the training and testing data. A sample frame can be seen below : 
+
+![5](https://github.com/ali-rzb/Heart-Border-Detector/assets/63366614/565da269-0627-4cb7-a6eb-c7cb10f4977d)
 
 ## Solution
 In this project, we employed the first two films, each comprising 48 frames, to train a neural network. The "labeling-init.py" file displays these 48 frames sequentially, allowing the user to define boundaries on them. Subsequently, these frames are saved as 16x16 tiles with two classes, "Non-Border" and "Border" (C0 and C1), using another program.
 
 ## Training:
 In the "train_2D.ipynb" file, we balance the number of border and non-border tiles and create a neural network with specific configurations:
+![0](https://github.com/ali-rzb/Heart-Border-Detector/assets/63366614/62523d17-787c-42ec-8536-d8c5b1849efd)
 
 Through trial and error, we achieved an accuracy of approximately 95% by adjusting the number of layers, batch size, and epochs. We save the model in a file with an "h5" extension.
 
