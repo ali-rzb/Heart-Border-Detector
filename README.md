@@ -17,6 +17,7 @@ In this project, we employed the first two films, each comprising 48 frames, to 
 
 ## Training:
 In the "train_2D.ipynb" file, we balance the number of border and non-border tiles and create a neural network with specific configurations:
+
 ![0](https://github.com/ali-rzb/Heart-Border-Detector/assets/63366614/62523d17-787c-42ec-8536-d8c5b1849efd)
 
 Through trial and error, we achieved an accuracy of approximately 95% by adjusting the number of layers, batch size, and epochs. We save the model in a file with an "h5" extension.
